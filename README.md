@@ -2,6 +2,34 @@
 This is a simple Java API designed to handle Links using the Adfoc.us platform.
 Esta é uma API simples em Java, feita para manipular Links usando a plataforma Adfoc.us.
 
+## Adicionando a dependência
+Gradle:
+```Gradle
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	dependencies {
+	        implementation 'com.github.SrBalbucio:AdfocusAPI:1.0'
+	}
+```
+Maven:
+```Maven
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+	<dependency>
+	    <groupId>com.github.SrBalbucio</groupId>
+	    <artifactId>AdfocusAPI</artifactId>
+	    <version>1.0</version>
+	</dependency>
+```
+
 ## Primeiros passos
 Para começar a criar links encurtados é necessário criar uma instância do AdfocusAPI.
 Há duas maneiras de criar esse objeto, como mostrado abaixo:
